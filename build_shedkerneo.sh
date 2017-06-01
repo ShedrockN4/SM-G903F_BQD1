@@ -65,7 +65,7 @@ FUNC_BUILD_KERNEL()
 
 	make ARCH=$ARCH $KERNEL_DEFCONFIG
 
-	make -j$NUMBEROFCPUS LOCALVERSION="#shedkerneo.b5"
+	make -j$NUMBEROFCPUS LOCALVERSION="#shedkerneo.b6"
 	
 	mv -f $OUTDIR/Image $BUILTDIR/Image	
 
