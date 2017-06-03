@@ -770,7 +770,7 @@ out:
 	kfree(n);
 	kfree(t);
 
-#CONFIG_SECURITY_SELINUX_ALWAYS_ENFORCE
+#ifdef CONFIG_SECURITY_SELINUX_ALWAYS_ENFORCE
 	selinux_enforcing = 1;
 #endif
 	if (!selinux_enforcing)
